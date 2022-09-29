@@ -33,11 +33,11 @@ namespace KalkylatorProgram
 
                 // Användarens inmatning "numInput1" testas för att se om den är giltig eller inte.
                 // Om giltig omvandlas numInput1 till cleanNum1. Annars visas felmeddelande
-                // och användaren ombedjes att försöka igen med heltalsvärde.
+                // och användaren ombedjes att försöka igen.
                 double cleanNum1 = 0;
                 while (!double.TryParse(numInput1, out cleanNum1))
                 {
-                    Console.Write("Felaktig inmatning. Ange ett heltalsvärde: ");
+                    Console.Write("Felaktig inmatning. Ange ett tal: ");
                     numInput1 = Console.ReadLine();
                 }
 
@@ -48,7 +48,7 @@ namespace KalkylatorProgram
                 double cleanNum2 = 0;
                 while (!double.TryParse(numInput2 , out cleanNum2))
                 {
-                    Console.Write("Felaktig inmatning. Ange ett heltalsvärde: ");
+                    Console.Write("Felaktig inmatning. Ange ett tal: ");
                     numInput2 = Console.ReadLine();
                 }
 
